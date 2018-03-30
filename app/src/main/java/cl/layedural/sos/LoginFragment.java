@@ -32,6 +32,8 @@ public class LoginFragment extends Fragment {
 
     @Override
     public void onViewCreated(View view, @Nullable Bundle savedInstanceState) {
+
+
         super.onViewCreated(view, savedInstanceState);
         final Button signBtn = view.findViewById(R.id.signBtn);
 
