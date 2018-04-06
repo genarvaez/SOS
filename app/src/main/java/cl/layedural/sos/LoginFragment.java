@@ -38,6 +38,8 @@ public class LoginFragment extends Fragment {
         final TextView textInit = view.findViewById(R.id.textInit);
 
 
+        
+
         fragmentBtn.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
