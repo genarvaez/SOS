@@ -1,0 +1,98 @@
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="cl.layedural.sos.ProfileFragment"
+    android:orientation="vertical"
+    android:paddingHorizontal="30sp"
+    android:layout_marginTop="30sp">
+
+    <!-- TODO: Update blank fragment layout -->
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Name"
+            android:id="@+id/nameTxt"/>
+
+        <EditText
+         android:layout_width="match_parent"
+            android:layout_height="30sp"
+            android:id="@+id/nameUser"
+            android:layout_below="@id/nameTxt"
+            android:background="@color/lightPrimaryColor"
+            android:layout_marginBottom="20sp"/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Lastname"
+            android:id="@+id/lastnameTxt"
+            android:layout_below="@id/nameUser"
+           />
+
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="30sp"
+                android:id="@+id/lastnameUser"
+                android:layout_below="@+id/lastnameTxt"
+                android:background="@color/lightPrimaryColor"
+                android:layout_marginBottom="20sp"/>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Email"
+                android:id="@+id/emailTxt"
+                android:layout_below="@id/lastnameUser"/>
+
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="30sp"
+                android:id="@+id/emailUser"
+                android:layout_below="@+id/emailTxt"
+                android:background="@color/lightPrimaryColor"
+                android:layout_marginBottom="20sp"/>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Password"
+                android:id="@+id/pswTxt"
+                android:layout_below="@id/emailUser"/>
+
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="30sp"
+                android:id="@+id/pswUser"
+                android:layout_below="@+id/pswTxt"
+                android:background="@color/lightPrimaryColor"
+                android:layout_marginBottom="20sp"/>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Phonenumber"
+                android:id="@+id/phoneTxt"
+                android:layout_below="@id/pswUser"/>
+
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="30sp"
+                android:id="@+id/phoneUser"
+                android:layout_below="@+id/phoneTxt"
+                android:background="@color/lightPrimaryColor"/>
+
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/phoneUser"
+            android:background="@color/colorPrimary"
+            android:layout_marginTop="30sp"
+            android:layout_marginHorizontal="50dp"
+            android:text="NEXT"
+            android:id="@+id/nextBtn"/>
+    </RelativeLayout>
+</FrameLayout>

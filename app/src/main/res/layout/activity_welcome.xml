@@ -39,7 +39,7 @@
             android:paddingHorizontal="30sp"
             android:textSize="30sp"
             android:layout_below="@+id/welcomeText"
-            android:id="@+id/sign_in"
+            android:id="@+id/start"
             android:background="@color/colorPrimaryDark"
             android:textColor="@color/lightPrimaryColor"/>
     </RelativeLayout>

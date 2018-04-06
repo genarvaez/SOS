@@ -21,13 +21,13 @@ public class WelcomeActivity extends AppCompatActivity {
         Typeface face=Typeface.createFromAsset(getAssets(),"fonts/BlackOpsOne-Regular.ttf");
         txtV.setTypeface(face);
 
-        Button signInButton = findViewById(R.id.sign_in);
+        Button startButton = findViewById(R.id.start);
 
-        signInButton.setOnClickListener(new View.OnClickListener() {
+        startButton.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                Intent intent_register = new Intent(WelcomeActivity.this, RegisterActivity.class);
-                startActivity(intent_register);
+                Intent intent_start = new Intent(WelcomeActivity.this, SignActivity.class);
+                startActivity(intent_start);
             }
         });
     }

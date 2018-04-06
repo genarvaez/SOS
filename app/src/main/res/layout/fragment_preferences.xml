@@ -1,0 +1,49 @@
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="cl.layedural.sos.PreferencesFragment">
+
+    <!-- TODO: Update blank fragment layout -->
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="EMERGENCY NUMBER CONFIGURATION"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="20sp"
+            android:textSize="20dp"
+            android:id="@+id/titlePreferences"/>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="2dp"
+            android:background="@color/colorPrimaryDark"
+            android:layout_marginHorizontal="40dp"
+            android:layout_below="@+id/titlePreferences"
+            android:layout_marginVertical="20dp"
+            android:id="@+id/divider"/>
+
+        <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+            android:orientation="vertical"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:layout_below="@id/divider"
+            >
+            <CheckBox android:id="@+id/checkbox_meat"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="CARABINEROS DE CHILE"
+                android:onClick="onCheckboxClicked"/>
+            <CheckBox android:id="@+id/checkbox_cheese"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="POLICÍA DE INVESTIGACIONES"
+                android:onClick="onCheckboxClicked"/>
+        </LinearLayout>
+
+    </RelativeLayout>
+
+</FrameLayout>
